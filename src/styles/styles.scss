@@ -1,0 +1,269 @@
+@import './variables.scss';
+
+.wrapper {
+    font-family: 'Source Sans Pro', sans-serif;
+    .links {
+        letter-spacing: 1px;
+        color: $light-gray;
+        font-size: 14px;
+        padding: 10px 15px;
+        text-transform: uppercase;
+    }
+    .navbar {
+        padding: 0;
+        text-align: right;
+        .navbar-toggler {
+            border: none;
+        }
+    }
+    .main-wrapper {
+        padding: 30px 15px 0 15px;
+        .container {
+            padding: 0 30px;
+        }
+        .greeter-col {
+            font-size: 24px;
+            font-weight: 600;
+            color: $greeter-color;
+            padding: 8px 15px;
+        }
+        .status-col {
+            font-size: 16px;
+            line-height: 1.25;
+            color: $gray;
+        }
+        .links-row {
+            display: inherit;
+            overflow: auto;
+            white-space: nowrap;
+            margin-top: 40px;
+            .links {
+                display: inline-block;
+                text-align: center;
+            } & .active {
+                color: $gray;
+                font-weight: 600;
+                border-bottom: 2px solid $gray;
+            }
+        }
+    }
+    hr {
+        margin: 0;
+    }
+    .dash-wrapper {
+        padding: 30px 15px 0 15px;
+        background-color: #f7faf9;
+        .payment-btn {
+            background-color: $simpl-green;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px 0 rgba(0, 209, 193, 0.3);
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        .expenditure-card {
+            .col-sm-12 {
+                font-size: 16px;
+                font-weight: normal;
+                text-transform: none;
+                letter-spacing: normal;
+            } & .amount {
+                font-size: 24px;
+                font-weight: bold;
+                color: $gray;
+            } & .rupee {
+                vertical-align: super;
+                font-size: 16px;
+                margin-right: 2px;
+            }
+            .progress {
+                margin: 8px 0;
+                height: 8px;
+                .progress-bar {
+                    width: 15%;
+                    background-color: $simpl-green;
+                    box-shadow: 0 4px 8px 0 rgba(0, 209, 193, 0.3);
+                }
+            }
+            .payment-btn {
+                margin-top: 24px;
+                height: 50px;
+            }
+        }
+        .profile-card {
+            text-transform: none;
+            letter-spacing: normal;
+            line-height: normal;
+            .row {
+                padding: 24px;
+            }
+            .profile-row {
+                border-bottom: 1px solid $border-color;
+                .profile-name {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $gray;
+                }
+                .profile-score {
+                    margin-top: 4px;
+                    font-size: 16px;
+                }
+            }
+            .device-row {
+                border-bottom: 1px solid $border-color;
+                .device-name {
+                    font-size: 16px;
+                    display: inherit;
+                    margin-bottom: 4px;
+                    .material-icons {
+                        font-size: 16px;
+                    }
+                }
+                .device-number {
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: $gray;
+                }
+            }
+            .profile-row {
+                font-size: 16px;
+                color: $simpl-green;
+                .text-right {
+                    color: $danger;
+                }
+            }
+        }
+        .card {
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+        .transactions-card {
+            text-transform: none;
+            letter-spacing: normal;
+            .card-body {
+                padding: 0;
+            }
+            .transactions-row {
+                padding: 12px 0;
+                margin: 0;
+                color: $gray;
+                .col-sm-4 {
+                    text-align: right;
+                }
+                .transaction-name, .transaction-amount {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            } & .payment {
+                color: $simpl-green;
+                .credit {
+                    font-size: 12px; 
+                }
+            } & .bill-row {
+                background-color: #f7faf9;
+                border: 1px solid $border-color;
+                border-left: none;
+                border-right: none;
+                .col-sm-8 {
+                    border-bottom: 1px solid $border-color;
+                    padding-bottom: 10px;                    
+                    margin-bottom: 10px;
+                }
+                .col-sm-9 {
+                    padding: 4px 0;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            } & .all-questions {
+                font-size: 16px;
+                border: 1px solid $border-color;
+                border-left: none;
+                border-right: none;                
+                color: $simpl-green;
+            }
+        }
+        .faq-accordion {
+            .card {
+                margin: 0;
+                border: none;
+                border-bottom: 1px solid $border-color;
+                letter-spacing: normal;
+                .card-header {
+                    padding: 10px 5px;
+                    background: none;
+                    .btn-link {
+                        padding: 5px 10px;
+                        color: $simpl-green;
+                        font-size: 16px;
+                    }
+                }
+                .card-body {
+                    text-transform: none;
+                }
+            }
+        }
+        .merchants-scroll {
+            overflow: auto;
+            white-space: nowrap;
+            .merchant-card {
+                display: inline-block;
+                margin: 32px 16px;
+                .image-container {
+                    display: block;
+                    width: 100px;
+                    height: 70px;
+                    border: 1px solid $border-color;
+                    border-radius: 4px;
+                    padding: 24px 16px;
+                    img {
+                        object-fit: contain;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .merchant-platforms {
+                    text-align: center;
+                    padding: 8px;
+                    letter-spacing: 0.5px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .footer-wrapper {
+        padding: 30px 15px;
+        background-color: #f2f6f4;
+        color: $light-gray;
+        .mission-statement {
+            padding: 16px 0 24px 0;
+        }
+        .col-md-2 {
+            padding: 0;
+        }
+        .secondary-links {
+            font-size: 16px;
+            text-transform: none;
+            padding: 10px 15px;
+        }
+        .address-col {
+            padding: 30px 15px;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+    }
+    @media (min-width: 768px) {
+        .collapse.dont-collapse-sm {
+          display: block;
+          height: auto !important;
+          visibility: visible;
+        }
+    }
+    @media (max-width: 768px) {
+        .col-md-2 {
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}
